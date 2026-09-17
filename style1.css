@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #3c3c3f;
+  color: #f1f1f1;
+  font-family: Arial, "Noto Sans Arabic", sans-serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 720px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 76px 44px 30px;
+  position: relative;
+}
+
+/* السهم العلوي */
+.back {
+  position: absolute;
+  top: 76px;
+  right: 44px;
+  width: 74px;
+  height: 74px;
+  border: 0;
+  border-radius: 50%;
+  background: #505055;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+/* الشعار التجريبي */
+.logo {
+  width: 74px;
+  height: 74px;
+  margin: 0 auto 58px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #4285f4,
+    #34a853,
+    #fbbc05,
+    #ea4335
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  direction: ltr;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+
+/* الإيميل */
+.email {
+  text-align: center;
+  direction: ltr;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 72px;
+}
+
+/* حقل كلمة المرور */
+.password-box {
+  position: relative;
+  width: 100%;
+  height: 104px;
+  border: 2px solid #77777b;
+  border-radius: 8px;
+}
+
+.password-box:focus-within {
+  border-color: #a8c7fa;
+}
+
+.password-box label {
+  position: absolute;
+  top: -15px;
+  right: 18px;
+  padding: 0 8px;
+  background: #3c3c3f;
+  color: #b9c9ff;
+  font-size: 19px;
+}
+
+.password-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  direction: ltr;
+  text-align: left;
+}
+
+/* عرض كلمة المرور */
+.show-password {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-top: 26px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.show-password input {
+  width: 34px;
+  height: 34px;
+  accent-color: #a8c7fa;
+}
+
+/* المساحة بين الحقل والأزرار */
+.spacer {
+  height: 560px;
+}
+
+/* زر التالي */
+.next {
+  width: 100%;
+  height: 104px;
+  border: 0;
+  border-radius: 55px;
+  background: #3d7df5;
+  color: white;
+  font-size: 27px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.next:hover {
+  background: #4c89fa;
+}
+
+/* زر نسيت كلمة المرور */
+.forgot {
+  width: 100%;
+  height: 104px;
+  margin-top: 14px;
+  border: 2px solid #4b4b50;
+  border-radius: 55px;
+  background: transparent;
+  color: #4d8dff;
+  font-size: 24px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 76px 44px 30px;
+  }
+
+  h1 {
+    font-size: 43px;
+  }
+
+  .email {
+    font-size: 23px;
+  }
+
+  .password-box input {
+    font-size: 23px;
+  }
+
+  .spacer {
+    height: 560px;
+  }
+}
+
+@media (max-width: 380px) {
+  .page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .back {
+    right: 24px;
+  }
+
+  .spacer {
+    height: 450px;
+  }
+}
